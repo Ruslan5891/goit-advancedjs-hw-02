@@ -1,0 +1,96 @@
+@import url('./reset.css');
+
+body {
+  font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  color: #2c2c2c;
+  background-color: #fff;
+}
+
+.snackbar-page {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.back-link {
+  display: inline-block;
+  margin-bottom: 32px;
+  font-size: 15px;
+  color: #4e75ff;
+  text-decoration: none;
+}
+
+.back-link:hover {
+  text-decoration: underline;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 360px;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 16px;
+}
+
+.form-field input {
+  padding: 10px 12px;
+  font-size: 16px;
+  color: #2c2c2c;
+  border: 1px solid #cfcfcf;
+  border-radius: 4px;
+  outline: none;
+}
+
+.form-field input:focus {
+  border-color: #4e75ff;
+}
+
+.form-state {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 12px 16px;
+  border: 1px solid #cfcfcf;
+  border-radius: 4px;
+}
+
+.form-state legend {
+  padding: 0 6px;
+  font-size: 14px;
+  color: #6b6b6b;
+}
+
+.form-state label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.form button[type='submit'] {
+  padding: 10px 18px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #4e75ff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 250ms ease;
+}
+
+.form button[type='submit']:hover {
+  background-color: #3a5cd8;
+}
+
+/* White halo so the colored emoji icon stands out on the solid toast background */
+.iziToast .toast-icon {
+  margin-right: 4px;
+  text-shadow: 0 0 2px #fff, 0 0 4px #fff;
+}
